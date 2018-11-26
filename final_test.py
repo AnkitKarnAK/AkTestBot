@@ -19,8 +19,8 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    if message.content.startswith('!ping'):
-       await client.send_message(message.channel, 'Pong!')
+    if message.content.startswith('ping'):
+       await client.send_message(message.channel, 'Pong!<:pepePunch:516721734607699968>')
 
     if message.content=="hi":
         await client.send_message(message.channel,"{0.author.mention} hye there :tada:<:blobcookie:516669559906893825>".format(message))
